@@ -14,6 +14,7 @@ public class RelativeXpath {
 	Thread.sleep(2000);
 		WebElement HTML_pg= driver.findElement(By.xpath("(//input)[3]"));
 	HTML_pg.sendKeys("Apurva");
+	
 	}
 
 }
