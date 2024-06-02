@@ -1,6 +1,8 @@
 package Selenium24;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -16,14 +18,21 @@ public class Auto_Sug_SearchShoes {
 		WebElement Search= driver.findElement(By.xpath("(//input)[5]"));
 				Search.sendKeys("Shoes");
 				Thread.sleep(2000);
-			List<WebElement> auto_sug = driver.findElements(By.xpath("//div[@class='two-pane-results-container']/div/div"));
+		/*	List<WebElement> auto_sug = driver.findElements(By.xpath("//div[@class='two-pane-results-container']/div/div"));
 		int count= 		auto_sug.size();
 		{
 			System.out.println(count);
 		}
-		auto_sug.get(4).click();
-		//	WebElement Search_Click= driver.findElement(By.xpath("(//input)[6]"));
-		//		Search_Click.sendKeys(Keys.ENTER);
+		auto_sug.get(4).click();*/
+			WebElement Search_Click= driver.findElement(By.xpath("(//input)[6]"));
+	Search_Click.sendKeys(Keys.ENTER);
+	Set<String> s1= driver.getWindowHandles();
+	System.out.println(s1);
+	Iterator<String>pcid=s1.iterator();
+	String parentid = pcid.next();
+	String childid = pcid.next();
+	System.out.println(parentid);
+	System.out.println(childid);
 	}
 
 }
