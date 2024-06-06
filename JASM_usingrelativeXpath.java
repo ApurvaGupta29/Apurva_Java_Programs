@@ -14,7 +14,8 @@ public class JASM_usingrelativeXpath {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("file:///C:/Users/apgupta/Desktop/Apurva%20github%20local/learningHTML1.html");
-WebElement username=driver.findElement(By.xpath("//input[@id='1']"));
+		driver.switchTo().alert().accept();
+		WebElement username=driver.findElement(By.xpath("//input[@id='1']"));
 username.sendKeys("Apgupta");
 
 WebElement Hint=driver.findElement(By.xpath("//input[@id='2']"));

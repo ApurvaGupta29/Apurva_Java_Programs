@@ -14,7 +14,8 @@ public class RightClickActionClass {
 		driver.manage().window().maximize();
 		WebElement PopUP = driver.findElement(By.linkText("Gmail"));
 		Actions a1 = new Actions(driver);		
-		a1.contextClick(PopUP).perform();
+		//a1.contextClick(PopUP).perform();
+		a1.doubleClick(PopUP).perform();
 	}
 
 }

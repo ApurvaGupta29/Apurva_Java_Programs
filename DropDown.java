@@ -24,6 +24,8 @@ s1.selectByValue("search-alias=appliances");
 Drop.sendKeys(Keys.ARROW_DOWN);
 Drop.sendKeys(Keys.ARROW_DOWN);
 Drop.sendKeys(Keys.ARROW_DOWN);*/
+
+
 	}
 
 }
